@@ -17,6 +17,71 @@ $code-colour: #c7254e;
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 $decoration-font-family: Athelas, STHeiti, Microsoft Yahei, serif;
 
+.mycode-block {
+  margin: 1.5em;
+  .sourceMarker {
+     background: #ccffcc;
+  }
+  table {
+    width: 100%;
+    border: 0px 0px 0px 0px;
+    .codeTitle {
+      background: #ddffff;
+      border-left: 0px;
+      border-right: 0px;
+      border-top: 0px;
+      border-bottom: 2px;
+      border-style: solid;
+      border-color: #88dddd;
+      padding: 6px;
+    }
+    .lineNumbers {
+      pre {
+        text-align: right;
+        padding: 0px;
+      }
+      border: 0px;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      background: #dddddd;
+    }
+    .lineNumbersDiv {
+      padding: 6px;
+      pre {
+        margin-top: 0px;
+      }
+    }
+    .sourceCode {
+      width: 100%;
+      border: 0px;
+      padding: 0px;
+
+      pre {
+	margin-top: 0px;
+        padding: 6px;
+      }
+    }
+    .sourceCodeWrap {
+      pre {
+        white-space: pre-wrap;
+      }
+    }
+  }
+  .codeBox {
+    margin: 1em;
+    padding: 0em;
+    border-radius: .25em;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    box-shadow: .1em .1em .5em rgba(0,0,0,.45);
+  }
+  font-size: 16p;
+}
+
 @mixin min-screen($min-width: $body-width) {
    @media screen and (min-width: $min-width) {
      @content;
