@@ -63,11 +63,17 @@
                         </a>
                     </li>
                 {% endfor %}
+		<li class="mobile-menu-item">
+		{{ post_macros::social_media_icons(extra=config.extra) }}
+  	        </li>
               </ul>
             </nav>
 
             <header id="header">
-                <div class="logo"><a href="{{ config.base_url }}">{{ config.extra.even_title }}</a></div>
+                <div class="logo">
+		    <a href="{{ config.base_url }}">{{ config.extra.even_title }}</a><br>
+		    {{ post_macros::social_media_icons(extra=config.extra) }}
+		</div>
                 <nav class="menu">
                     <ul>
                         {% for item in config.extra.even_menu %}
