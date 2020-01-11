@@ -1,8 +1,14 @@
-{% macro title(page) %}
+{% macro title(page, in_list) %}
     <header class="post__header">
+	{% if in_list == "true" %}
         <h1 class="post__title">
             <a href="{{ page.permalink }}">{{ page.title }}</a>
         </h1>
+	{% else %}
+        <h1>
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </h1>
+	{% endif %}
         <div class="post__meta">
             <span class="post__time">{{ page.date | date(format="%F") }}</span>
             {% if page.category %}
