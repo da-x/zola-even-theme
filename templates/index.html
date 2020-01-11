@@ -123,6 +123,15 @@
       {% block js_body %}
           <script type="text/javascript" src="{{ get_url(path="even.js", trailing_slash=false) }}" ></script>
       {% endblock js_body %}
+
+      {% if config.extra.author %}
+      {% if config.extra.email %}
+      <hr />
+      <div style="text-align: center">
+	  © 2010-2020, {{ config.extra.author}} <a href="mailto:{{ config.extra.email | safe }}">✉</a>
+      </div>
+      {% endif %}
+      {% endif %}
     </body>
 
 </html>
