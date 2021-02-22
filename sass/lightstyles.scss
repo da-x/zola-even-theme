@@ -1,0 +1,24 @@
+// Light styles
+//
+// Ctrl-Shift-I -> Ctrl->Shift-P -> prefers-color-scheme: light
+//
+
+$theme-color-map: (
+  'Default': #4d5bc0 #f8f5ec,
+  'Mint Green': #16982B #f5f5f5,
+  'Cobalt Blue': #0047AB #f0f2f5,
+  'Hot Pink': #FF69B4 #f8f5f5,
+  'Dark Violet': #9932CC #f5f4fa
+);
+
+$main-background: #ffffff;
+$text-colour: #000000;
+$main-colour: #2d3ba0;  // Color for links
+$secondary-colour: #f8f5ec;
+$code-colour: #4e25c7;
+$source-marker-background: #ccffcc;
+$code-title-background: #ddffff;
+$code-title-border-color: #88dddd;
+$line-number-background: #dddddd;
+$code-box-shadow: rgba(0,0,0,.45);
+$post-title-color: $text-colour;

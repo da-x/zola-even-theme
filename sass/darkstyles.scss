@@ -1,0 +1,24 @@
+// Dark styles
+//
+// Ctrl-Shift-I -> Ctrl->Shift-P -> >prefers-color-scheme: dark
+//
+
+$theme-color-map: (
+  'Default': #4d5bc0 #f8f5ec,
+  'Mint Green': #16982B #f5f5f5,
+  'Cobalt Blue': #0047AB #f0f2f5,
+  'Hot Pink': #FF69B4 #f8f5f5,
+  'Dark Violet': #9932CC #f5f4fa
+);
+
+$main-background: #0d1117;
+$text-colour: #ffffff;
+$main-colour: #58a6ff; // Color for links
+$secondary-colour: #161b22;
+$code-colour: rgb(231,209,237);
+$source-marker-background: #004488;
+$code-title-background: rgb(20, 25, 30);
+$code-title-border-color: #888888;
+$line-number-background: #333333;
+$code-box-shadow: rgba(255,255,255,.45);
+$post-title-color: $text-colour;
