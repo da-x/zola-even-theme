@@ -1,3 +1,9 @@
+{% macro draft_marker(page) %}
+    {% if page.draft %}
+        <h2 style="text-align:center">- DRAFT - </h2>
+    {% endif %}
+{% endmacro draft_marker %}
+
 {% macro title(page, in_list) %}
     <header class="post__header">
 	{% if in_list == "true" %}
